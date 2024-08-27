@@ -1,0 +1,75 @@
+/* Styles for the outer container to control width and height */
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure it takes at least full viewport height */
+    padding: 20px;
+    background: none;
+}
+
+/* Ensure full width and height for the inner container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100px; /* Optional: Set a max width */
+    overflow-x: hidden; /* Hide any horizontal overflow */
+    padding: 0;
+    margin: 0;
+}
+
+/* Example Jumbotron styles */
+.jumbotron {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Full width of the container */
+    height: auto; /* Adjust height as needed */
+    box-sizing: border-box; /* Include padding and border in width and height */
+    position: relative;
+    border: 2px solid #ffffff;
+    padding: 20px;
+    background-color: #FFFAF0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    overflow-x: hidden; /* Hide any horizontal overflow */
+}
+
+.navbarcus {
+    width: 100%; /* Ensure it takes full width */
+    max-width: 1200px; /* Optional: Set a max width */
+    height: auto; /* Adjust height as needed */
+}
+
+/* Ensure tabs and content fit within the viewport */
+#yummy-tabs {
+    width: 100%;
+    max-width: 1200px; /* Optional: Set a max width */
+    overflow-x: hidden; /* Hide any horizontal overflow */
+}
+
+.row {
+    width: 100%;
+    margin: 0; /* Reset margins */
+}
+
+.col-md-6 {
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in width and height */
+}
+
+/* Additional styles for buttons and alerts */
+button {
+    margin-top: 10px;
+}
+
+.alert {
+    margin-top: 20px;
+}
+
+.alert .close {
+    cursor: pointer;
+}

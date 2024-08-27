@@ -1,0 +1,51 @@
+header {
+  position: fixed; /* Ensure the header is fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2; /* Ensure the header is above other content */
+  background-color: #000; /* Adjust the background color as needed */
+  color: #fff; /* Adjust text color */
+  padding: 1rem; /* Adjust padding as needed */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between logo and nav */
+  align-items: center; /* Center items vertically */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem; /* Adjust spacing as needed */
+  margin-left: auto; /* Move the navigation to the right */
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  background-color: orange; /* Button background color */
+  color: black; /* Button text color */
+  text-decoration: none;
+  padding: 0.5rem 1rem; /* Padding for buttons */
+  border-radius: 5px; /* Optional: Rounded corners */
+  transition: background-color 0.3s; /* Smooth background color transition */
+  display: inline-block; /* Ensure the links are treated as blocks */
+  /* Remove outline */
+}
+nav ul li{
+  border: none;
+  background-color: white;
+
+}
+
+nav ul li a:hover {
+  background-color: darkorange; /* Change background color on hover */
+}

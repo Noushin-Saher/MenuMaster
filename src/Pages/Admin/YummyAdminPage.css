@@ -1,0 +1,91 @@
+/* AdminPage.css */
+.container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+h2 {
+    color: #4CAF50; /* Green */
+    text-align: center;
+    
+}
+
+h3 {
+    color: #FF9800; /* Orange */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45A049; /* Darker green */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+li div {
+    display: flex;
+    align-items: center;
+    
+}
+
+li input {
+    width: auto;
+    margin-left: 10px;
+}
+
+li button {
+    margin-left: 10px;
+    background-color: #FF9800; /* Orange */
+}
+
+li button:hover {
+    background-color: #FB8C00; /* Darker orange */
+}
+
+li button.cancel {
+    background-color: #F44336; /* Red */
+}
+
+li button.cancel:hover {
+    background-color: #E53935; /* Darker red */
+}

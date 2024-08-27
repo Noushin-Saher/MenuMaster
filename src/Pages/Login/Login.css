@@ -1,0 +1,96 @@
+/* Login.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../../Images/yummyheader6.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.custom-gap {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 420px;
+   /* Make sure this is set to transparent */
+  border: 2px solid rgb(34, 31, 31);
+  color: rgb(13, 10, 10); 
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  border-radius: 10px; 
+  padding: 30px 40px;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 50px 0;
+}
+
+.input-box input {
+  width: 100%;
+  background: transparent;
+  border: 2px solid rgb(18, 16, 16);
+  border-radius: 40px;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  padding: 20px 45px 20px 20px;
+  box-sizing: border-box;
+}
+
+.input-box input::placeholder {
+  color: rgb(24, 20, 20);
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 20px;
+  color: black;
+  top: 60%;
+  transform: translateY(-50%);
+  font-size: 16px;
+}
+
+.wrapper button {
+  width: 100%;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.788);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0);
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+}
+.container{
+  background: none;
+
+}
