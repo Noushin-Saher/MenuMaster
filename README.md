@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+# 🍽️ MenuMaster – Full Stack Food Ordering App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**MenuMaster** is a food ordering platform built using **React** (HTML/CSS/JavaScript) for the frontend and **PHP + MySQL** via **XAMPP** for the backend. It is designed to simplify food ordering on campuses.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ⚙️ Tech Stack
 
-### `npm start`
+- **Frontend:** React, HTML, CSS, JavaScript  
+- **Backend:** PHP (XAMPP)  
+- **Database:** MySQL (via phpMyAdmin)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧑‍💻 How to Run This Project (Windows)
 
-### `npm test`
+### 1️⃣ Clone the Repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/Noushin-Saher/MenuMaster.git
+cd MenuMaster
+```
 
-### `npm run build`
+Or download it as a ZIP and extract.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2️⃣ Setup the Frontend (React)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+cd frontend
+npm install
+npm start
+```
 
-### `npm run eject`
+The app will run at:  
+👉 `http://localhost:3000`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3️⃣ Setup the Backend (PHP + MySQL via XAMPP)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### 🧰 Step-by-Step (Windows)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Install XAMPP**  
+   👉 [Download here](https://www.apachefriends.org/index.html)
 
-## Learn More
+2. **Start XAMPP Control Panel**  
+   ✅ Turn **ON Apache** and **MySQL**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Place Backend Files in XAMPP**  
+   - Copy the `Backend` folder from this project
+   - Paste it into:
+     ```
+     C:\xampp\htdocs\Backend
+     ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Create the Database**
 
-### Code Splitting
+You have two options:
+- ✅ **Option A** (Use provided SQL file):
+  - Go to: `http://localhost/phpmyadmin`
+  - Create a database (e.g., `menumaster`)
+  - Click the **Import** tab
+  - Select the provided `database.sql` file (or similar)
+  - Click **Go**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- ✍️ **Option B** (Create your own database):
+  - You can design your own tables (like `items`, `orders`, `users`, etc.) based on the project structure.
+  - Then update the PHP code and SQL connection accordingly.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 4️⃣ Update React API URLs
 
-### Making a Progressive Web App
+In your React code, update fetch/axios paths like this:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```js
+fetch("http://localhost/Backend/create_item.php")
+```
 
-### Advanced Configuration
+> Make sure it matches your backend file names and structure.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## ✅ Final Steps
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. **Ensure XAMPP is running** with Apache & MySQL enabled  
+2. **Start the React frontend**
+   ```bash
+   cd frontend
+   npm start
+   ```
+3. **Visit in your browser:**  
+   👉 `http://localhost:3000`
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Notes
+
+- XAMPP must be running for backend functionality to work
+- `htdocs` is the root folder for all PHP apps
+- Make sure your database name and connection details match those in `db_connection.php` or equivalent
+- You can freely modify the database schema to fit your version of the project
+
+---
+
+## 📚 Learn More
+
+- [React Documentation](https://reactjs.org/)
+- [PHP Manual](https://www.php.net/manual/en/)
+- [XAMPP Documentation](https://www.apachefriends.org/index.html)
+
+GitHub Repo: [MenuMaster](https://github.com/Noushin-Saher/MenuMaster)
