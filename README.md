@@ -111,4 +111,8 @@ fetch("http://localhost/Backend/create_item.php")
 - [PHP Manual](https://www.php.net/manual/en/)
 - [XAMPP Documentation](https://www.apachefriends.org/index.html)
 
+<<<<<<< HEAD
 GitHub Repo: [MenuMaster](https://github.com/Noushin-Saher/MenuMaster)
+=======
+GitHub Repo: [MenuMaster](https://github.com/Noushin-Saher/MenuMaster)
+>>>>>>> ecb89d749ad39fea839707a5445240db647503a9
