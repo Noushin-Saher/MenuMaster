@@ -83,17 +83,6 @@ fetch("http://localhost/Backend/create_item.php")
 
 ---
 
-## 📁 Folder Structure
-
-```
-📁 MenuMaster/
-├── 📁 frontend/         # React project
-├── 📁 Backend/          # PHP backend files
-└── 📄 database.sql      # SQL file for initial DB setup (optional)
-```
-
----
-
 ## ✅ Final Steps
 
 1. **Ensure XAMPP is running** with Apache & MySQL enabled  
